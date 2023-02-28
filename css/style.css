@@ -64,21 +64,29 @@ div#formulario>h1 {
 
 label {
     display: none;
+    
 }
 div.campo > span{
     color: white;
-    font-size: 1.4em;
+    font-size: 1.5em;
     width: 40px;
     padding: 5px;
+
 }
 div.campo > input{
-    background-color: #aae3e1;
-    font-size: 0.9em;
-    width: calc(100% - 46px);
-    transform: translate(1px);
+    background-color: #cdf6f4;
+    font-size: 1em;
+    width: calc(100% - 45px);
     height: 100%;
+    position: relative;
+    top: -5px;
     border-radius: 5px;
-    padding: 4px;
+    padding: 1px;
+    border: none;
+    transform: translate(-0px); /*responsável pelo posicionamento dos inputs*/
+}
+div.campo > input:focus-within{ /*quando a gente digitar algo ele irá ganhar o campo irá ganhar um foco maior*/
+background-color: white;
 }
 
 div#formulario>p {
@@ -87,6 +95,7 @@ div#formulario>p {
 
 form>div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
